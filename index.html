@@ -1,0 +1,54 @@
+<html>
+<!-- Loads css for style -->
+<link rel="stylesheet" href="style.css"> 
+<head>
+    <style>h1 {text-align: center;}</style>
+    <h1>Kayla Martinez</h1>   
+    <div class = "headerHome">
+        <img src="EwbHeader.jpg" alt="" style="width:100%;">
+    </div>
+</head>
+
+
+<body>
+    <div class = "buttonGrid3">
+    <a href="Resume.html">
+        <button class="buttonHome">Resume</button>
+    </a>
+    <a href="AboutMe.html">
+        <button class="buttonHome">AboutMe</button>
+    </a>
+    <a href="ProjectPurple.html">
+        <button class="buttonHome">Project Purple</button>
+    </a>
+    <div class="dropDownButton">
+        <button onmouseover=myFunction() class="buttonHome">Projects</button>
+        <div id="myDropdown" class="dropdownButton-content">
+          <a href="heartDisease.html">Heart Disease Predictor</a>
+          <a href="psycheAstroid.html">Psyche Astroid Sample Return</a>
+          <a href="EWB.html">Engineers Without Border</a>
+          <a href="robotNavigation.html">Robot Navigation</a>
+        </div>
+    </div>
+    </div> 
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event){
+            if (!event.target.matches('.buttonHome')) {
+                var dropdowns = document.getElementsByClassName("dropdownButton-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    }
+                }
+                }
+            }
+                
+    </script>
+</body>
+</html>

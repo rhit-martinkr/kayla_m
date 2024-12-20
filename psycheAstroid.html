@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="style.css">    
+<h1>Psyche Astroid Sample Return</h1>
+    <body>
+    <h2>Design</h2>
+    <div class = "grid">
+        <p>Psyche is a metal-rich asteroid, currently orbiting the Sun between Mars and Jupiter. Arizona
+        State University oversees the missions to explore the asteroid. The first mission is in progress
+        and launched in October of 2023 to explore the origin of the asteroid. The second mission will
+        return samples of the asteroid to Earth in 2029. Obtaining authentic samples will allow
+        researchers to gain a better understanding of the surfaces of the asteroid. A spacecraft will hold
+        a sealing system, holding samples after extraction. Our sealing system could be utilized to seal
+        and protect samples from contamination.
+        The goal of our project is to design a sealing system for collected samples from the Psyche
+        asteroid. The final design consists of a fully automated sealing system that maintains the
+        integrity of samples from the asteroid. Most of the characteristics of Psyche are only
+        hypothesized, such as material and surface texture. We consider such associated technical
+        challenges with our design. Challenges for this project include simulating the environment-
+        controlled mission’s conditions within the spacecraft, including a wide range of temperatures
+        and a low acceleration of gravity. The system aims to function under such extreme conditions in
+        addition to remaining cost effective and versatile.</p>
+        <img src="capstoneImg1.png" alt="Image">
+    </div>
+    </body>
+
+    <body>
+        <h2>Plug Design</h2>
+        <div class = "grid">
+            <p>Two pieces make up the body of the plug. The plug is design to be placed into a round vial,
+            which holds the same. The screw threads the pieces together and
+            compresses the O-ring once screwed in. It is important to note the undercuts along the
+            circumference of the top of the plug. The grippers hold onto the plug by these undercuts. The
+            spring serves to provide uniform force retention and additional support when travelling down the
+            vial, while also cleaning the walls of the vial. The plug allows for the sample to be safely 
+            returned to Earth, while also protecting it. </p>
+            <img src="capstoneImg2.png" alt="Image">
+    </div>
+    </body>
+
+    <body>
+        <h2>Automation</h2>
+            <p>The linear actuator rod moves the gripper assembly down. The stepper motor controls the
+                gears. The gears (pinions) and racks act to form a rack and pinion concept, moving the lowering
+                attachment.
+                The stepper motor controls the rotation of the gears. The gears allow the racks to open and
+                close horizontally. As the racks open, the lowering attachment can directly
+                interact with the plug.
+                The lowering attachment holds and pushes down the plug. The lowering attachment interacts
+                via the undercuts inside the plug to push the plug against the sample within the vial.
+                When the racks and lowering attachment are closed, the attachment can fit into the plug.
+                The lowering attachment expands against the undercuts of the top portion
+                of the plug. The attachment then pushes the plug into the vial and
+                further pushes the plug down the vial to meet the sample. Once the plug reaches the sample,
+                the racks close again and retract the lowering attachment upward, leaving the plug in the vial.
+                For the screwing process, the lowering attachment fully expands to the end of the racks, moving
+                out of the way for the screwing attachment to come in.
+                A stepper motor in the sealing station rotates the screwing attachment. The screwing
+                attachment rotates the screw, ultimately compressing the O-ring and create the seal.
+            </p>
+        <div class = "grid3">
+            <img src="capstoneImg3.png" alt="Image" width="30%">
+            <img src="capstoneImg4.png" alt="Image" width="30%">
+            <img src="capstoneImg7.png" alt="Image" width="15%">
+        </div>
+        <div class = "grid">
+            <p>To fully automate the sealing process, the sealing station detects the orientation of the screw
+                head. Based on our design, the screw is inside the vial, without being screwed down all the way
+                before the space craft is launched into space. While the space craft travels up, the screw could
+                rotate to an unknown position and change orientation. Once the detection of the screw head
+                occurs, the screwing attachment’s hex bit matches with the alignment of the screw head and
+                screws downward.
+                We created an algorithm to detect the orientation of the screw using color detection. The
+                algorithm relies on two green dots that are added to the screw head.  </p>
+            <img src="capstoneImg6.png" alt="Image" width="30%">
+    </div>
+    </body>
+
+</html>
